@@ -1,0 +1,37 @@
+{
+      "name": "server",
+      "version": "1.0.0",
+      "description": "Learnova - A comprehensive online learning platform that enables instructors to create, manage, and publish courses, upload learning materials, track student performance, and interact with learners. Students can browse courses, enroll, access video lessons and resources, complete quizzes, and monitor their learning progress. The platform also includes an admin dashboard for managing users, approving courses, monitoring platform activities, and ensuring quality control across the system.",
+      "main": "./src/server.js",
+      "keywords": [
+            "e-learning",
+            "online-courses",
+            "education",
+            "learning-platform",
+            "video-courses",
+            "course-management",
+            "student-portal",
+            "instructor-platform",
+            "educational-technology",
+            "online-education",
+            "skill-development",
+            "training-platform"
+      ],
+      "author": "Samrat Mallick",
+      "license": "ISC",
+      "type": "module",
+      "dependencies": {
+            "bcryptjs": "^3.0.3",
+            "cloudinary": "^2.9.0",
+            "cookie-parser": "^1.4.7",
+            "cors": "^2.8.6",
+            "dotenv": "^17.3.1",
+            "express": "^5.2.1",
+            "mongoose": "^9.2.4",
+            "multer": "^2.1.1"
+      },
+      "devDependencies": {
+            "nodemon": "^3.1.14",
+            "prettier": "^3.8.1"
+      }
+}
