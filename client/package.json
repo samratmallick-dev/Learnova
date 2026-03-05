@@ -1,9 +1,11 @@
 {
-      "name": "learnova-server",
-      "version": "1.0.0",
+      "name": "learnova-client",
+      "private": true,
+      "version": "0.0.0",
+      "type": "module",
       "description": "Learnova - A comprehensive online learning platform that enables instructors to create, manage, and publish courses, upload learning materials, track student performance, and interact with learners. Students can browse courses, enroll, access video lessons and resources, complete quizzes, and monitor their learning progress. The platform also includes an admin dashboard for managing users, approving courses, monitoring platform activities, and ensuring quality control across the system.",
-      "main": "./src/server.js",
       "keywords": [
+            "learnova",
             "e-learning",
             "online-courses",
             "education",
@@ -17,21 +19,25 @@
             "skill-development",
             "training-platform"
       ],
-      "author": "Samrat Mallick",
-      "license": "ISC",
-      "type": "module",
+      "scripts": {
+            "dev": "vite",
+            "build": "vite build",
+            "lint": "eslint .",
+            "preview": "vite preview"
+      },
       "dependencies": {
-            "bcryptjs": "^3.0.3",
-            "cloudinary": "^2.9.0",
-            "cookie-parser": "^1.4.7",
-            "cors": "^2.8.6",
-            "dotenv": "^17.3.1",
-            "express": "^5.2.1",
-            "mongoose": "^9.2.4",
-            "multer": "^2.1.1"
+            "react": "^19.2.0",
+            "react-dom": "^19.2.0"
       },
       "devDependencies": {
-            "nodemon": "^3.1.14",
-            "prettier": "^3.8.1"
+            "@eslint/js": "^9.39.1",
+            "@types/react": "^19.2.7",
+            "@types/react-dom": "^19.2.3",
+            "@vitejs/plugin-react-swc": "^4.2.2",
+            "eslint": "^9.39.1",
+            "eslint-plugin-react-hooks": "^7.0.1",
+            "eslint-plugin-react-refresh": "^0.4.24",
+            "globals": "^16.5.0",
+            "vite": "^7.3.1"
       }
 }
