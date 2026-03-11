@@ -3,6 +3,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { corsOptions } from "./config/cors/cors.config.js";
 import Logger from "./config/logger.config.js";
+import errorHandler from "./middleware/error.middleware.js";
 
 const app = express();
 
@@ -56,5 +57,7 @@ app.use((req, res) => {
             method: req.method,
       });
 });
+
+app.use(errorHandler);
 
 export default app;
